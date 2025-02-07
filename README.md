@@ -59,11 +59,11 @@ Bu sistem, kullanıcıların merkeziyetsiz kimlik (DID) kullanarak doğrulama ya
 
 6)_**Özet**_
    
-✔ DID oluşturma, mesaj imzalama ve doğrulama işlemlerini tamamladık.
+a. DID oluşturma, mesaj imzalama ve doğrulama işlemlerini tamamladık.
 
-✔ Node.js (Backend) ve React.js (Frontend) entegrasyonunu sağladık.
+b. Node.js (Backend) ve React.js (Frontend) entegrasyonunu sağladık.
 
-✔ QR kod ile kimlik paylaşımını düşündük.
+c. QR kod ile kimlik paylaşımını düşündük.
 
 Bu temel sistemin üzerine, JWT token entegrasyonu, merkeziyetsiz veri depolama, zk-SNARK tabanlı gizli doğrulama gibi ekstra özellikler eklenebilir. 
 
