@@ -15,3 +15,9 @@ return ( <div> <button onClick={generateDID}>DID
 Oluştur</button> <p>DID: {did}</p> <button onClick={signMessage}>
 Mesajı İmzala</button><p>
 İmza: {signature}</p> </div> ); }
+
+/*
+Kullanıcı arayüzü, DID oluşturma, imzalama ve doğrulama işlemlerini yapacak.
+a. Kullanıcı için DID oluşturuyor.
+b. Kullanıcının bir mesajı özel anahtarla imzalamasını sağlıyor.
+*/
