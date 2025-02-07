@@ -6,3 +6,9 @@ if (recoveredAddress.toLowerCase()
 {  res.json({  erified: true, message: "Kimlik doğrulandı!" });} 
 
 else { res.json({ verified: false, message: "Doğrulama başarısız!" });     } });
+
+/*
+Kullanıcının gönderdiği imzayı doğrular.
+a. Kullanıcının imzalı mesajını alıyor.
+b. İmzayı doğrulayıp, gerçekten o DID’e ait mi kontrol ediyor.
+*/
