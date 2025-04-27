@@ -8,8 +8,8 @@ res.json({ did, publicKey: wallet.publicKey, privateKey: wallet.privateKey }); }
 app.listen(3000, () => console.log("Server running on port 3000"));
 
 /*
-Yeni bir DID oluşturma
-Kullanıcı için Ethereum tabanlı bir DID üretiriz.
-a.Ethereum için rastgele bir cüzdan oluşturuyoruz.
-b.Cüzdanın adresini DID olarak belirliyoruz.
+Create a new DID
+We generate an Ethereum-based DID for the user.
+creating a random wallet for Ethereum.
+setting the address of the wallet as the DID.
 */
