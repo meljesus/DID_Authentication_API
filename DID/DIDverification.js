@@ -3,9 +3,9 @@ app.post("/verify", (req, res) => { const { message, signature, did }
 = ethers.utils.verifyMessage(message, signature);  
 if (recoveredAddress.toLowerCase() 
     === did.split(":")[2].toLowerCase()) 
-{  res.json({  erified: true, message: "Kimlik doğrulandı!" });} 
+{  res.json({  erified: true, message: "Identity verified!" });} 
 
-else { res.json({ verified: false, message: "Doğrulama başarısız!" });     } });
+else { res.json({ verified: false, message: "Verification failed!" });     } });
 
 /*
 Verifies the signature sent by the user
