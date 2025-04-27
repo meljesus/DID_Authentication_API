@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 export default function DIDAuth() {     const [did, setDid] = useState("");     
-const [message, setMessage] = useState("Bu benim kimliğim!"); 
+const [message, setMessage] = useState("This is my identity!"); 
 const [signature, setSignature] = useState("");     
 const generateDID = async () => { const res = await fetch("http://localhost:3000/generate-did"); const data = await res.json(); 
 setDid(data.did);     }; 
@@ -8,13 +8,13 @@ const signMessage = async () => { const res = await fetch("http://localhost:3000
 method: "POST", 
 headers: { "Content-Type": "application/json" }, 
 body: JSON.stringify({ message,  
-privateKey: "Kullanıcının özel anahtarı" }), }); 
+privateKey: "User's private key" }), }); 
 const data = await res.json();  
 setSignature(data.signature); }; 
 return ( <div> <button onClick={generateDID}>DID  
-Oluştur</button> <p>DID: {did}</p> <button onClick={signMessage}>
-Mesajı İmzala</button><p>
-İmza: {signature}</p> </div> ); }
+Create</button> <p>DID: {did}</p> <button onClick={signMessage}>
+signature</button><p>
+signature: {signature}</p> </div> ); }
 
 /*
 The user interface will handle DID creation, signing and verification
