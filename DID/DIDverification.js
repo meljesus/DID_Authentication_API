@@ -8,7 +8,7 @@ if (recoveredAddress.toLowerCase()
 else { res.json({ verified: false, message: "Doğrulama başarısız!" });     } });
 
 /*
-Kullanıcının gönderdiği imzayı doğrular.
-a. Kullanıcının imzalı mesajını alıyor.
-b. İmzayı doğrulayıp, gerçekten o DID’e ait mi kontrol ediyor.
+Verifies the signature sent by the user
+a. Receives the user's signed message
+b. Verifies the signature and checks if it really belongs to that DID
 */
