@@ -17,7 +17,7 @@ Mesajı İmzala</button><p>
 İmza: {signature}</p> </div> ); }
 
 /*
-Kullanıcı arayüzü, DID oluşturma, imzalama ve doğrulama işlemlerini yapacak.
-a. Kullanıcı için DID oluşturuyor.
-b. Kullanıcının bir mesajı özel anahtarla imzalamasını sağlıyor.
+The user interface will handle DID creation, signing and verification
+a. Creates a DID for the usr
+b. Allows the user to sign a message with a private key
 */
