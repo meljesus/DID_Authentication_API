@@ -4,7 +4,7 @@ const signature = await wallet.signMessage(message);
 res.json({ signature }); });
 
 /*
-Bu fonksiyon, kullanıcının bir mesajı özel anahtarıyla imzalamasını sağlar.
-a. Kullanıcıdan özel anahtar ve mesaj alıyor.
-b. Mesajı imzalayıp kriptografik imza döndürüyor.
+This function allows the user to sign a message with their private key.
+a. Receives the private key and message from the user.
+b. Signs the message and returns a cryptographic signature.
 */
